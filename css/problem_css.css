@@ -1,0 +1,232 @@
+ body {
+        margin: 0;
+        overflow-x: hidden;
+        font-family: Arial;
+    }
+
+    #innpakningMenysider {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 30px;
+    margin: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    #innpakning {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+
+    #meny {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(118,113,113,0.7);
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+    #logo {
+        font-family: "Arial Black";
+        font-size: 25px;
+        color: #2e75b6;
+        margin-left: 30px;
+    }
+
+    #boksMenysider {
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        height: 100%;
+        margin-right: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menysider {
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #2e75b6;
+}
+
+.menysider:hover {
+    cursor: pointer;
+    color: #ff7d81;
+}
+
+    a {
+        text-decoration: none;
+
+    }
+
+    #delInfo {
+        display: flex;
+        flex-direction: column;
+        width: 1300px;
+        height: 800px;
+        align-items: center;
+        text-align: center;
+        font-family: Arial;
+        margin-top: 100px;
+        letter-spacing: 2px;
+    }
+
+    #overskrift {
+        font-weight: normal;
+        font-size: 40px;
+        font-family: "Kristen ITC";
+        color: #ff7d81;
+    }
+
+    .underoverskrift {
+        font-family: "Arial Black";
+        font-size: 22px;
+        color: #2e75b6;
+    }
+
+    .infotekst {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-top: -12px;
+    }
+
+    #delKontaktinfo {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: #2e75b6;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: Arial;
+        letter-spacing: 2px;
+    }
+
+    #p_over{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 400px;
+        background-image: url("../hovedbildeUtenParaply_1.png");
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    #p_over_info{
+        position: absolute;
+        top: 0;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        margin-top: 50px;
+    }
+    #tekstogbilde{
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+        text-align: left;
+        min-width: 767px;
+        max-width: 926px;
+        margin: auto;
+        padding-top: 20px;
+    }
+    #p_over_tekst{
+        padding-left: 2em;
+        line-height: 1.7em;
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin: 0;
+    }
+    #p_over_bilde{
+        opacity: 0.8;
+    }
+    .blue_tekst{
+        color: #24B8DC;
+    }
+    #p_undertekst{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 1100px;
+        min-width: 870px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .p_undertekst_item{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .p_undertekst_item p{
+        line-height: 1.6;
+        letter-spacing: 0.05em;
+        font-size: 18px;
+        margin:0;
+    }
+    .p_undertekst_item img{
+        padding-left: 2em;
+    }
+    .p_undertekst_item h3{
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    .p_undertekst_item a{
+        color: #24B8DC;
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 1000px){
+        .flex-row{
+            flex-direction: column;
+        }
+
+        .flex-row img{
+            width: 400px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #p_undertekst{
+            min-width: 400px
+        }
+        #tekstogbilde{
+            min-width: 440px;
+        }
+
+        #p_over{
+            height: 500px;
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        #meny {
+            flex-direction: column;
+            height: 106px;
+        }
+        #overskrift{
+            margin-top: 80px;
+        }
+       #delKontaktinfo {
+            font-size: 12px;
+        }
+        #p_over{
+            height: 600px;
+        }
+        #tekstogbilde img{
+            height: 120px;
+        }

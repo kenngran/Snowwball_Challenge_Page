@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#innpakning {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 2340px;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -2;
+}
+
+#meny {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(118,113,113,0.7);
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+#logo {
+    font-family: "Arial Black";
+    font-size: 25px;
+    color: #2e75b6;
+    margin: 20px;
+    height: 30px;
+}
+
+#innpakningMenysider {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 30px;
+    margin: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menysider {
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #2e75b6;
+}
+
+.menysider:hover {
+    cursor: pointer;
+    color: #ff7d81;
+}
+
+#bigbrellaPage {
+    color: #ff7d81;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#delInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 2170px;
+    margin-top: 70px;
+    align-items: center;
+}
+
+#innpakningInfoOgBilde {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+#bakgrunnsbilde {
+    width: 100%;
+    height: 700px;
+    background-image: url("../vannmangel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+#innpakningBilder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 230px;
+}
+
+#bigbrellaPil {
+    height: 100%;
+    width: 250px;
+    background-color: white;
+}
+
+#bigbrellaStangBy {
+    height: 100%;
+    width: 160px;
+    background-color: white;
+}
+
+#bigbrellaVann {
+    height: 100%;
+    width: 250px;
+    background-color: white;
+}
+
+#info {
+    width: 750px;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+#overskrift {
+    font-weight: normal;
+    font-size: 40px;
+    font-family: "Kristen ITC";
+    color: #ff7d81;
+    margin-top: 50px;
+}
+
+#delProductFeatures {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 880px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.ikonOgTekst {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.overskriftOgTekst {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+
+.underoverskrift {
+    font-family: "Arial Black";
+    font-size: 22px;
+    color: #2e75b6;
+}
+
+.infotekst {
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: -12px;
+}
+
+#regnsky {
+    width: 160px;
+    height: 160px;
+}
+
+#folkVann {
+    width: 160px;
+    height: 160px;
+}
+
+#regndraape {
+    width: 160px;
+    height: 120px;
+}
+
+#delKontaktinfo {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #2e75b6;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1300px) {
+    #innpakning {
+        height: 2500px;
+    }
+
+    #delInfo {
+        height: 2300px;
+    }
+
+    #delProductFeatures {
+    }
+
+    .ikonOgTekst {
+        width: 80%;
+    }
+
+    .overskriftOgTekst {
+        width: 75%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #innpakning {
+        height: 2500px;
+    }
+
+    #delInfo {
+        height: 2300px;
+    }
+
+    #bakgrunnsbilde {
+        height: 600px;
+    }
+
+    #delProductFeatures {
+    }
+
+    .ikonOgTekst {
+        width: 100%;
+    }
+
+    .overskriftOgTekst {
+        width: 75%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #meny {
+        flex-direction: column;
+    }
+
+    #innpakning {
+        height: 2500px;
+    }
+
+    #delInfo {
+        height: 2300px;
+    }
+
+    #bakgrunnsbilde {
+        height: 500px;
+    }
+
+    #delProductFeatures {
+        width: 95%;
+    }
+
+    .ikonOgTekst {
+        width: 100%;
+        height: 280px;
+    }
+
+    .overskriftOgTekst {
+        width: 75%;
+        height: 100%;
+    }
+
+    #info {
+        font-size: 17px;
+        width: 80%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #meny {
+            flex-direction: column;
+        }
+
+        #innpakning {
+            height: 2500px;
+        }
+
+        #delInfo {
+            height: 2300px;
+        }
+
+        #bakgrunnsbilde {
+            height: 500px;
+        }
+
+        #delProductFeatures {
+            width: 95%;
+            height: 2600px;
+        }
+
+        .ikonOgTekst {
+            width: 100%;
+            height: 450px;
+            flex-direction: column;
+        }
+
+        .overskriftOgTekst {
+            width: 90%;
+            height: 70%;
+            align-items: center;
+            text-align: center;
+        }
+
+        #innpakningInfoOgBilde {
+            width: 100%;
+            height: 1000px;
+        }
+
+        #innpakningBilder {
+            height: 200px;
+        }
+
+        #bigbrellaPil {
+            height: 100%;
+            width: 200px;
+        }
+
+        #bigbrellaStangBy {
+            height: 100%;
+            width: 110px;
+        }
+
+        #bigbrellaVann {
+            height: 100%;
+            width: 200px;
+        }
+
+        #delKontaktinfo {
+            font-size: 12px;
+        }
+    }
+}
