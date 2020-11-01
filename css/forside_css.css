@@ -32,8 +32,7 @@ body {
     background-size: cover;
     background-position: bottom;
     margin-top: 70px;
-    -webkit-filter: blur(8px);
-    filter: blur(3px);
+
 }
 
 #innpakningSlagsetning {
@@ -50,6 +49,7 @@ body {
     color: white;
     font-family: "Arial Black";
     font-size: 50px;
+    backdrop-filter: blur(3px);
 }
 
 #logo {
@@ -191,11 +191,11 @@ a {
 .knapp {
     width: 270px;
     height: 50px;
-    background-color: #ff7d81;
+    background-color: #2e75b6;
     font-family: "Arial";
     font-size: 17px;
     font-weight: bold;
-    border: solid #d67070 4px;
+    border: solid #205280 4px;
     border-radius: 20px;
 }
 
@@ -205,8 +205,7 @@ a {
 
 .knapp:hover {
     cursor: pointer;
-    border-color: #a75454;
-    background-color: #d6696c;
+    background-color: #205280;
 }
 
 #delKontaktinfo {
@@ -395,6 +394,14 @@ a {
         height: 3400px;
     }
 
+    .menysider {
+        font-size: 18px;
+    }
+
+    #innpakningMenysider {
+        width: 480px;
+    }
+
     #delInfo {
         height: 2500px;
     }
@@ -417,7 +424,7 @@ a {
         width: 400px;
         height: 120px;
         font-size: 30px;
-        margin-top: 230px;
+        margin-top: 210px;
     }
 
     #innpakningProblemdel {
@@ -436,13 +443,18 @@ a {
 
     #innpakningKnapper {
         width: 100%;
-        margin-top: 0px;
+        margin-top: 30px;
         height: 200px;
         flex-direction: column;
     }
 
+    .knapp {
+        width: 250px;
+        font-size: 15px;
+    }
+
     #delKontaktinfo {
         width: 100%;
-        font-size: 12px;
+        font-size: 11px;
     }
 }
