@@ -213,7 +213,7 @@
         }
     }
 
-    @media screen and (max-width: 800px){
+    @media only screen and (max-width: 800px){
         #meny {
             flex-direction: column;
             height: 106px;
@@ -230,3 +230,34 @@
         #tekstogbilde img{
             height: 120px;
         }
+    }
+    @media only screen and (max-width: 600px){
+        .menysider {
+            font-size: 18px;
+        }
+        #innpakningMenysider {
+            width: 480px;
+        }
+        #delKontaktinfo {
+            width: 100%;
+            font-size: 9px;
+        }
+        #p_undertekst{
+            min-width: 400px
+        }
+        #tekstogbilde{
+            min-width: 400px;
+            flex-direction: column;
+            padding-top: 0px;
+            text-align: center;
+        }
+        #tekstogbilde img{
+            width: 100px;
+            height: auto;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #tekstogbilde p{
+            padding:0;
+        }
+    }
