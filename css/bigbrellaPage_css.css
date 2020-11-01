@@ -290,67 +290,77 @@ a {
         width: 80%;
     }
 
-    @media only screen and (max-width: 600px) {
-        #meny {
-            flex-direction: column;
-        }
+}
 
-        #innpakning {
-            height: 2500px;
-        }
+@media only screen and (max-width: 600px) {
+    #meny {
+        flex-direction: column;
+    }
 
-        #delInfo {
-            height: 2300px;
-        }
+    .menysider {
+        font-size: 18px;
+    }
 
-        #bakgrunnsbilde {
-            height: 500px;
-        }
+    #innpakningMenysider {
+        width: 480px;
+    }
 
-        #delProductFeatures {
-            width: 95%;
-            height: 2600px;
-        }
+    #innpakning {
+        height: 2500px;
+    }
 
-        .ikonOgTekst {
-            width: 100%;
-            height: 450px;
-            flex-direction: column;
-        }
+    #delInfo {
+        height: 2300px;
+    }
 
-        .overskriftOgTekst {
-            width: 90%;
-            height: 70%;
-            align-items: center;
-            text-align: center;
-        }
+    #bakgrunnsbilde {
+        height: 500px;
+    }
 
-        #innpakningInfoOgBilde {
-            width: 100%;
-            height: 1000px;
-        }
+    #delProductFeatures {
+        width: 95%;
+        height: 2600px;
+    }
 
-        #innpakningBilder {
-            height: 200px;
-        }
+    .ikonOgTekst {
+        width: 100%;
+        height: 450px;
+        flex-direction: column;
+    }
 
-        #bigbrellaPil {
-            height: 100%;
-            width: 200px;
-        }
+    .overskriftOgTekst {
+        width: 90%;
+        height: 70%;
+        align-items: center;
+        text-align: center;
+    }
 
-        #bigbrellaStangBy {
-            height: 100%;
-            width: 110px;
-        }
+    #innpakningInfoOgBilde {
+        width: 100%;
+        height: 1000px;
+    }
 
-        #bigbrellaVann {
-            height: 100%;
-            width: 200px;
-        }
+    #innpakningBilder {
+        height: 200px;
+    }
 
-        #delKontaktinfo {
-            font-size: 12px;
-        }
+    #bigbrellaPil {
+        height: 100%;
+        width: 200px;
+    }
+
+    #bigbrellaStangBy {
+        height: 100%;
+        width: 110px;
+    }
+
+    #bigbrellaVann {
+        height: 100%;
+        width: 200px;
+    }
+
+    #delKontaktinfo {
+        width: 100%;
+        font-size: 9px;
     }
 }
